@@ -1,2 +1,2 @@
 # SoftUniEducation
-JScript
+JavaScript
