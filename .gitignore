@@ -1,0 +1,13 @@
+**node_modules
+*.pptx
+*.docx
+*.pdf
+*.zip
+*.txt
+*.png
+*.jpg
+*.rar
+*.zip
+*.gif
+node_modules/
+*.ico
