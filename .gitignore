@@ -9,5 +9,6 @@
 *.rar
 *.zip
 *.gif
+*.md
 node_modules/
 *.ico
