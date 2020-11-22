@@ -1,0 +1,25 @@
+@import url("https://use.fontawesome.com/releases/v5.10.2/css/all.css");
+.buttonClick {
+  background-color: rgb(41, 179, 28);
+  color: rgb(251, 251, 251);
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 2px;
+  font-family: Helvetica, sans-serif;
+}
+.buttonEmail {
+  background-color: rgb(238, 146, 25);
+  color: rgb(251, 251, 251);
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 2px;
+  font-family: Helvetica, sans-serif;
+}
