@@ -12,3 +12,4 @@
 *.md
 node_modules/
 *.ico
+.vscode
