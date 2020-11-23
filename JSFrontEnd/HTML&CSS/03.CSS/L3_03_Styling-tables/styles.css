@@ -7,9 +7,18 @@ th {
   border-width: 1px;
   border-color: rgb(221, 221, 221);
   border-style: solid;
+  border-spacing: 0;
+  padding: 5px;
 }
 
-tr:hover {
+th {
+  background: #cccccc;
+}
+table {
+  width: 100%;
+}
+
+tbody tr:hover {
   background: rgb(0, 0, 0);
   color: rgb(255, 255, 255);
 }

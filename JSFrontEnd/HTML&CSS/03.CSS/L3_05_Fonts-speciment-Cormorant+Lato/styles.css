@@ -6,11 +6,15 @@ html {
   line-height: 1.5;
 }
 
-ul {
+.main-list {
+  list-style-type: square;
+}
+
+.nested-list-normal {
   list-style-type: disc;
 }
 
-.nestedUL {
+.nested-list-circle {
   list-style-type: circle;
 }
 
