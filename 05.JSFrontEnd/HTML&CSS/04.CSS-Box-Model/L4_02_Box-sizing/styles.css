@@ -1,0 +1,22 @@
+html {
+  box-sizing: border-box;
+}
+
+section {
+  width: 250px;
+  height: 250px;
+  border: 2px dotted;
+  border-color: #11c67b;
+  text-align: center;
+  margin: 50px auto;
+}
+p {
+  box-sizing: border-box;
+  width: 100%;
+  border: 2px solid;
+  border-color: #0936ca;
+}
+
+h1 {
+  text-align: center;
+}

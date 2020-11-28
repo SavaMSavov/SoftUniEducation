@@ -1,0 +1,14 @@
+article {
+  margin-top: 100px;
+}
+p {
+  width: 200px;
+
+  border: 5px;
+  border-style: solid;
+  border-radius: 10px;
+
+  background-color: rgb(64, 224, 208);
+  padding: 20px;
+  margin: auto;
+}
