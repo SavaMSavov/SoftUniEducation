@@ -5,24 +5,9 @@
     <title>Blog Layout Inline Block</title>
   </head>
   <body>
-    <article class="wrapper">
-      <header>
-        <aside>
-          <h2>Latest Posts</h2>
-          <ul>
-            <li><a href="">Aliquam erat volutpat</a></li>
-            <li>
-              <a href=""
-                >Donec sodales malesuada purus, a gravida ipsum molestie ac</a
-              >
-            </li>
-            <li><a href="">Donec ac luctus leo, eget lobortis sapien</a></li>
-          </ul>
-        </aside>
-        <h2>Article Title</h2>
-      </header>
-
-      <section>
+    <main>
+      <section class="blog-article">
+        <h1>Article Title</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
           tempus lorem nibh, quis vehicula quam eleifend vel. Sed sagittis urna
@@ -34,6 +19,8 @@
           facilisis nibh, a tincidunt lectus. Duis interdum nibh quis porttitor
           facilisis. In sit amet nulla sed nibh tristique iaculis eu nec metus.
         </p>
+      </section>
+      <section class="blog-article">
         <h2>Heading level 2</h2>
         <p>
           Aliquam hendrerit egestas orci, at sollicitudin lectus mattis eu. Nunc
@@ -66,7 +53,7 @@
           Curae; Duis sodales odio diam. Phasellus ultricies faucibus massa sit
           amet pharetra.
         </p>
-        <img src="images/picture.jpg" alt="" />
+        <img src="./images/picture.jpg" alt="Blog Picture" />
         <p>
           Ut vitae tristique magna. In hac habitasse platea dictumst. Aliquam
           tempor dolor in ante porta, quis convallis metus laoreet. Ut a magna
@@ -74,10 +61,21 @@
           eleifend vel diam non viverra. Nullam at maximus mi. Integer luctus
           quis felis vitae ornare. Ut eu consequat libero.
         </p>
-      </section>
-      <footer>
         <p>13 March 2018</p>
-      </footer>
-    </article>
+      </section>
+    </main>
+    <aside>
+      <h2>Latest Posts</h2>
+      <ul>
+        <li><a href="#">Aliquam erat volutpat</a></li>
+        <li>
+          <a href="#"
+            >Donec sodales malesuada purus, a gravida ipsum molestie ac</a
+          >
+        </li>
+        <li><a href="#">Donec ac luctus leo, eget lobortis sapien</a></li>
+      </ul>
+    </aside>
+    <footer>Blog Layout &copy; All rights reserved.</footer>
   </body>
 </html>
