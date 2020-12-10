@@ -1,0 +1,56 @@
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: rgb(238, 238, 238);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1.site-title {
+  display: inline-block;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-family: sans-serif;
+}
+
+header {
+  border-bottom: 2px solid;
+}
+h1 {
+  font-family: Georgia, serif;
+}
+img {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 20px -1px rgba(0, 0, 0, 0.25);
+  padding: 10px;
+  border: solid;
+}
+
+.first-article img {
+  float: right;
+  margin-left: 20px;
+}
+.second-article img {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.quotes-article blockquote {
+  margin: 0 40px;
+  border-left: 3px solid #dcdcdc;
+  padding-left: 30px;
+  float: right;
+  width: 40%;
+
+  font-style: oblique;
+  font-family: Georgia, serif;
+}
+
+.quotes-article cite {
+  display: block;
+  text-align: right;
+  padding-top: 30px;
+}

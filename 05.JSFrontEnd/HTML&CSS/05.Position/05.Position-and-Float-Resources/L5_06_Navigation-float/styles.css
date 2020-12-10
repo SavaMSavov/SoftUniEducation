@@ -1,0 +1,91 @@
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: rgb(238, 238, 238);
+  margin: 20px 200px;
+}
+
+header ul,
+header p.site-title {
+  margin: 0px;
+  padding: 0px;
+}
+
+header p.site-title {
+  display: inline-block;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 30px;
+  margin-bottom: 0px;
+}
+
+.top-nav {
+  float: right;
+}
+.top-nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 0 10px;
+}
+header::after {
+  display: inline-block;
+  background: black;
+  width: 100%;
+  height: 2px;
+  content: "";
+}
+
+h1,
+h3 {
+  font-family: Georgia, serif;
+  font-size: 1em/1.2;
+}
+img {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 20px -1px rgba(0, 0, 0, 0.25);
+  padding: 10px;
+  border: solid;
+}
+
+.first-article img {
+  float: right;
+  margin-left: 20px;
+}
+.second-article img {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+a {
+  color: rgb(0, 102, 0);
+  text-decoration: none;
+}
+aside ul {
+  list-style-type: square;
+}
+.quotes-article blockquote {
+  margin: 0 40px;
+  border-left: 3px solid #dcdcdc;
+  padding-left: 30px;
+  float: right;
+  width: 40%;
+
+  font-style: oblique;
+  font-family: Georgia, serif;
+}
+
+.quotes-article cite {
+  display: block;
+  text-align: right;
+  padding-top: 30px;
+}
+
+aside {
+  float: right;
+  width: 25%;
+}
+main {
+  float: left;
+  width: 65%;
+}
