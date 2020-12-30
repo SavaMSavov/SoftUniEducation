@@ -1,0 +1,30 @@
+html {
+  font-family: "Helvetica", sans-serif;
+}
+body {
+  max-width: 1200px;
+  margin: 50px auto;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation-inline-block-header {
+  border-bottom: 2px solid;
+  border-color: rgb(0, 0, 0);
+}
+
+.navigation-inline-block-header-nav ul {
+  display: flex;
+  list-style: none;
+}
+
+.navigation-inline-block-header-nav li {
+  margin: 0 15px;
+}
+
+.navigation-inline-block-header-nav a {
+  color: rgb(0, 153, 0);
+  text-decoration: none;
+}
