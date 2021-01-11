@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  background-color: rgb(238, 238, 238);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  height: 100vh;
+  align-items: center;
+}
+
+article {
+  display: flex;
+  justify-content: center;
+  flex-basis: 15%;
+  overflow: hidden;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 9px 9px 0px rgba(0, 0, 0, 0.75);
+  height: 50vh;
+}
+
+article img {
+  flex-basis: 100%;
+}
+.wide {
+  flex-grow: 2;
+  background-color: black;
+}
+
+.wide img {
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  width: 80%;
+}

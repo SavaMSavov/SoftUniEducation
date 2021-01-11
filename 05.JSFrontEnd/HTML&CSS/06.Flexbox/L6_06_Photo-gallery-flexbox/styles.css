@@ -1,0 +1,26 @@
+body,
+ul,
+li {
+  display: flex;
+}
+
+ul {
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+li {
+  margin-bottom: 2em;
+  flex-basis: 30%;
+  border: 7px solid black;
+  background-color: white;
+  box-shadow: inset 0px 0px 17px -5px rgba(0, 0, 0, 0.75);
+  justify-content: center;
+}
+img {
+  padding: 35px 20px;
+  width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
