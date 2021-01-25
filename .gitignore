@@ -10,6 +10,7 @@
 *.zip
 *.gif
 *.md
+*.svg
 node_modules/
 *.ico
 .vscode
