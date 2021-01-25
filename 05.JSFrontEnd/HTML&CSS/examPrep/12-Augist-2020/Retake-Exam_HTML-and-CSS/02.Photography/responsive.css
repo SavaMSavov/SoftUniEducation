@@ -1,0 +1,13 @@
+/* TODO: Add media queries */
+@media all and (max-width: 600px) {
+  .thumbnails {
+    flex-direction: column;
+  }
+  .thumbnails div {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .thumbnails div img {
+    height: 250px;
+  }
+}

@@ -1,0 +1,83 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css";
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@500&display=swap");
+body {
+  margin: 0;
+  background-color: white;
+  color: #485667;
+  font-family: "Lato", sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  width: 75%;
+  justify-content: center;
+  margin: 100px auto;
+  justify-content: space-around;
+}
+
+.included-wrapper {
+  background-color: #e3f3fd;
+  padding: 20px 15px;
+}
+.included-wrapper ul {
+  padding: 0px;
+}
+.included-wrapper ul li {
+  margin: 13px auto;
+  padding-left: 15px;
+  list-style: none;
+}
+
+.plan-wrapper {
+  border: 3px solid #43a8f6;
+}
+
+.included-wrapper,
+.plan-wrapper {
+  flex-basis: 44%;
+  border-radius: 7px;
+  box-shadow: 5px 5px 9px -6px rgba(0, 0, 0, 0.75);
+}
+
+i {
+  color: #43a8f6;
+  margin-right: 10px;
+}
+
+h2,
+span {
+  font-family: "Montserrat", sans-serif;
+}
+h2 {
+  margin-left: 13px;
+}
+
+.plan-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.plan-wrapper .plan-price .price {
+  display: inline;
+}
+
+.plan-wrapper .plan-price .price span {
+  font-size: 35px;
+  font-weight: bold;
+  color: #43a8f6;
+}
+
+.plan-wrapper .text {
+  margin-top: 30px;
+}
+
+.plan-button {
+  background-color: #43a8f6;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  margin-top: 15px;
+  padding: 8px 40px;
+  box-shadow: 5px 5px 9px -5px rgba(0, 0, 0, 0.75);
+}
