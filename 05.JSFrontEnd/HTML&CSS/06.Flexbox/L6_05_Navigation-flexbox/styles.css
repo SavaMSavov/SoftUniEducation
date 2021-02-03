@@ -10,21 +10,21 @@ header {
   justify-content: space-between;
 }
 
-.navigation-inline-block-header {
-  border-bottom: 2px solid;
-  border-color: rgb(0, 0, 0);
+.navigation-header {
+  border-bottom: 2px solid rgb(0, 0, 0);
+
 }
 
-.navigation-inline-block-header-nav ul {
+.navigation-header-nav ul {
   display: flex;
   list-style: none;
 }
 
-.navigation-inline-block-header-nav li {
+.navigation-header-nav li {
   margin: 0 15px;
 }
 
-.navigation-inline-block-header-nav a {
+.navigation-header-nav a {
   color: rgb(0, 153, 0);
   text-decoration: none;
 }
