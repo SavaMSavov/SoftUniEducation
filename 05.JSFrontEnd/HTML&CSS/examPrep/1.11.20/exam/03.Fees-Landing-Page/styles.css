@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&display=swap");
+body {
+  margin: 0px;
+  font-family: "Lato", sans-serif;
+}
+
+h2,
+h3 {
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  padding: 15px;
+}
+
+.logo-wrapper {
+  flex-basis: 45%;
+}
+
+.logo-wrapper img {
+  max-width: 17%;
+}
+
+.menu {
+  flex-basis: 20%;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+.menu ul li a {
+  color: #54546d;
+  text-decoration: none;
+}
+
+.taxes {
+  height: 300px;
+  background-color: #54546d;
+  text-align: center;
+}
+
+.taxes::before {
+  content: url(./images/calculator-icon.svg);
+  position: absolute;
+  top: 150px;
+  left: -70px;
+}
+.taxes h2 {
+  color: white;
+  margin: 0px;
+  padding-top: 40px;
+}
+.courses-wrapper h2 {
+  margin: 0px;
+  padding-top: 40px;
+  color: black;
+}
+
+.courses-wrapper {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.design,
+.fundamentals,
+.professional {
+  background-color: white;
+  flex-basis: 30%;
+  border-radius: 10px;
+  position: relative;
+  top: 5vh;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.price-wrapper {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  color: white;
+}
+
+.design-price {
+  background: rgb(8, 159, 65);
+  background: linear-gradient(
+    86deg,
+    rgba(8, 159, 65, 0.8631827731092436) 15%,
+    rgba(70, 210, 123, 1) 85%
+  );
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-top: 14px;
+  color: white;
+}
+
+.fundamentals-price {
+  background: rgb(77, 109, 138);
+  background: linear-gradient(
+    86deg,
+    rgba(77, 109, 138, 1) 21%,
+    rgba(96, 152, 204, 1) 85%
+  );
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.professional-price {
+  background: rgb(78, 59, 169);
+  background: linear-gradient(
+    86deg,
+    rgba(78, 59, 169, 1) 21%,
+    rgba(138, 123, 224, 1) 85%
+  );
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.design {
+  display: flex;
+  flex-direction: column;
+}
+
+.design p {
+  margin-top: 0;
+}
+
+.design a {
+  width: 50%;
+  margin: 40px auto;
+  text-decoration: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  background-color: #9a5dc6;
+  color: white;
+}
+
+.price-wrapper h3,
+.design-price h3 {
+  margin: 0px;
+  padding-bottom: 5px;
+}
+
+.design h3 {
+  padding-top: 10px;
+}
+
+.price-wrapper p {
+  margin: 0px;
+  padding-bottom: 10px;
+}
+
+.present {
+  padding-right: 15px;
+  border-right: 2px solid white;
+}
+
+.positives {
+  width: 55%;
+  margin: 250px auto;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  background-color: #e6e6e6;
+}
+
+td {
+  text-align: left;
+  padding: 15px;
+}
+
+tr:nth-child(even) {
+  background-color: white;
+}
+
+td:first-child {
+  width: 70%;
+}
+
+.positives-info {
+  margin-bottom: 30px;
+}
+
+.bank {
+  width: 80%;
+  margin: 0px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  top: -15vh;
+}
+
+.bank-info {
+  width: 60%;
+}
+.bank-logo {
+  margin-top: 40px;
+  width: 30%;
+}
+.bank-logo img {
+  width: 100%;
+}
+
+footer {
+  background-color: #54546d;
+  color: #7a7791;
+  text-align: center;
+  padding: 15px;
+}

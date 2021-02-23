@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+}
+
+.wrapper {
+  width: 40%;
+  margin: 30vh auto;
+}
+
+.wrapper h1,
+.wrapper p {
+  margin: 5px;
+}
+
+.content {
+  display: flex;
+}
+
+.button-wrapper {
+  flex-basis: 47%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.button-wrapper a {
+  text-decoration: none;
+  color: white;
+  background-color: #03a87c;
+  padding: 10px 45px;
+  border-radius: 4px;
+}
+
+.text {
+  flex-basis: 47%;
+}
+.text h3 {
+  margin: 25px 0px;
+}
+.text p {
+  margin: 0;
+}
+.text span {
+  background-color: #cefde9;
+}
+
+h1 {
+  font-size: 45px;
+  font-family: Georgia, serif;
+}
+p {
+  color: #787575;
+}
