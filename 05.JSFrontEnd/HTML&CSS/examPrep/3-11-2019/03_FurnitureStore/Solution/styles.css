@@ -1,0 +1,161 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
+body {
+  margin: 0px;
+  font-size: 20px;
+  color: #8e8784;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+header {
+  background-color: #f93700;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+}
+
+nav a {
+  margin: 20px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+}
+
+input {
+  height: 25px;
+  width: 400px;
+  border: none;
+  padding: 5px;
+}
+
+.search i {
+  background-color: #b6afaf;
+  color: white;
+  padding: 9px 25px 10px;
+  font-size: 16px;
+}
+
+.account i {
+  margin-right: 10px;
+}
+.all-rooms {
+  display: flex;
+  justify-content: space-around;
+}
+
+.room {
+  flex-basis: 25%;
+  text-align: center;
+}
+
+.room img {
+  width: 80%;
+  height: 300px;
+  margin-top: 30px;
+}
+
+.new-collection {
+  display: flex;
+  margin: 0px 45px;
+  justify-content: center;
+}
+
+.new-collection .text-wrapper {
+  flex-basis: 30%;
+}
+
+.new-collection .text-wrapper h1 {
+  font-size: 55px;
+  color: #f93700;
+  margin-bottom: 10px;
+}
+.new-collection .text-wrapper p {
+  margin: 0px;
+  margin-bottom: 40px;
+  font-size: 25px;
+}
+.new-collection .text-wrapper a {
+  color: white;
+  text-decoration: none;
+  background-color: #f93700;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.new-collection .img-wrapper {
+  flex-basis: 70%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.new-collection .img-wrapper img {
+  width: 60%;
+}
+
+.positives {
+  display: flex;
+  justify-content: space-around;
+  background-color: #cac3c3;
+  margin: 40px 40px 0px 40px;
+}
+
+.option {
+  text-align: center;
+  flex-basis: 25%;
+  margin: 30px 0px;
+}
+
+.option h3 {
+  color: #474242;
+}
+
+.option img {
+  width: 15%;
+  background-color: #e6d6d6;
+  border-radius: 50%;
+  padding: 20px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.navigation-footer {
+  flex-basis: 40%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.contact-us {
+  flex-basis: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+footer a {
+  color: #8e8784;
+  text-decoration: none;
+}
+
+.social-icons i {
+  margin-left: 10px;
+}
+
+.button {
+  background-color: #cac3c3;
+  color: #5c4a57;
+  padding: 10px 50px;
+}
