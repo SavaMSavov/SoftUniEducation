@@ -1,0 +1,48 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css";
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+section {
+  width: 70%;
+  height: 38vh;
+  margin: 50px auto;
+  font-size: 20px;
+  font-family: "Ubuntu", sans-serif;
+
+  background-image: linear-gradient(
+      86deg,
+      rgba(20, 42, 84, 0.8287289915966386) 100%,
+      rgba(20, 42, 84, 0.8287289915966386) 100%
+    ),
+    url(../Requirements-and-Resources/images/image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cross {
+  text-align: right;
+  padding: 10px;
+  font-size: 30px;
+  color: white;
+}
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+  color: white;
+}
+
+.wrapper article {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.wrapper article i {
+  color: #ec8421;
+  font-size: 40px;
+}
+
+.wrapper article p {
+  margin: 0px;
+}
+
+.wrapper article h3 {
+  margin-bottom: 5px;
+}

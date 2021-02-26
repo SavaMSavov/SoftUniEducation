@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto:wght@100;400&display=swap");
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css";
+body {
+  width: 60%;
+  margin: 0px auto;
+  font-family: "Roboto", sans-serif;
+  color: #333333;
+}
+
+h1 {
+  font-family: "Abril Fatface", cursive;
+  font-size: 35px;
+  margin: 0px;
+}
+
+header img {
+  width: 100%;
+  height: 90vh;
+  object-fit: cover;
+}
+header {
+  position: relative;
+}
+
+.heading {
+  position: absolute;
+  top: 25px;
+  left: 50px;
+  width: 15%;
+  padding: 15px;
+  background-color: transparent;
+  box-shadow: 4px 6px 12px 0px rgba(0, 0, 0, 0.75);
+}
+
+.heading h1:nth-child(2) {
+  display: inline-block;
+  border-bottom: 2px solid white;
+  padding-bottom: 5px;
+}
+
+.quote {
+  text-align: right;
+  width: 25%;
+  position: absolute;
+  top: 260px;
+  right: 50px;
+  background: rgb(201, 199, 198);
+  background: linear-gradient(
+    270deg,
+    rgba(201, 199, 198, 1) 18%,
+    rgba(157, 147, 139, 1) 68%
+  );
+  box-shadow: 4px 6px 12px 0px rgba(0, 0, 0, 0.75);
+  padding: 10px;
+  text-shadow: 1px 1px black;
+}
+
+.quote h1 {
+  font-size: 40px;
+  color: #9d938b;
+}
+
+.quote p {
+  margin-top: 0px;
+  color: white;
+}
+
+span {
+  font-weight: bold;
+}
+
+main {
+  position: relative;
+  top: -5px;
+  display: flex;
+  font-size: 20px;
+}
+.services-and-contact-wrapper {
+  flex-basis: 70%;
+  background-color: #f2f0f3;
+}
+
+.services-wrapper {
+  padding: 40px;
+}
+.services-wrapper i {
+  margin-right: 10px;
+}
+
+.contacts h1 {
+  padding-left: 40px;
+  margin-top: 50px;
+  border-bottom: 2px solid #333333;
+}
+
+.contacts p,
+.email {
+  padding: 10px 40px;
+}
+
+.email {
+  display: flex;
+  align-items: center;
+}
+
+.email input {
+  background-color: #bab1ad;
+  color: white;
+  width: 40%;
+  padding: 14px;
+  border: none;
+}
+
+.email a {
+  text-decoration: none;
+  background-color: #67784d;
+  color: white;
+  padding: 10px 25px;
+  margin-left: 15px;
+  border-radius: 4px;
+}
+
+.data {
+  flex-basis: 30%;
+  padding: 30px;
+  background-color: #bab1ad;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.big-text {
+  font-size: 60px;
+  margin: 0px;
+  font-weight: 100;
+  color: white;
+}
+
+.small-text {
+  margin: 0px;
+  text-transform: uppercase;
+}

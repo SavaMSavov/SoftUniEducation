@@ -1,0 +1,28 @@
+@media all and (max-width: 768px) {
+  .wrapper.style2 {
+    padding: 0px;
+  }
+
+
+  .gallery {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .gallery > * {
+    width: 100%;
+  }
+
+  .spotlight {
+    flex-direction: column;
+  }
+
+  .spotlight > * {
+    width: 100%;
+  }
+
+  .spotlight .inner {
+    padding: 1rem;
+    text-align: center;
+  }
+}

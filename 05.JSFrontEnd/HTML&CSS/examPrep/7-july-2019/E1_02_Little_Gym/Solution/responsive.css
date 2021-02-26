@@ -1,0 +1,44 @@
+@media all and (max-width: 768px) {
+  .site-main {
+    margin: 0px;
+  }
+
+  .site-form,
+  .site-blog-container {
+    margin-top: 0px;
+  }
+  .site-form p {
+    flex-direction: column;
+  }
+
+  .site-form input {
+    width: 100%;
+  }
+
+  .site-form button {
+    margin: 0px auto;
+  }
+
+  .site-posts {
+    flex-direction: column;
+    width: 70%;
+    margin: 0px auto;
+  }
+
+  .site-footer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media all and (min-width: 769px) and (max-width: 1024px) {
+  .site-main {
+    margin: 0px;
+  }
+
+  .site-logo {
+    font-size: 1.4rem;
+  }
+  .site-logo img {
+    width: 8rem;
+  }
+}
