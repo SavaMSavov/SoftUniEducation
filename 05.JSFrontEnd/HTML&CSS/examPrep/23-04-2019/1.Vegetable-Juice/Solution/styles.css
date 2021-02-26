@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif&display=swap");
+
+body {
+  margin: 0px;
+  font-family: "PT Serif", serif;
+  font-size: 20px;
+}
+.wrapper {
+  width: 50%;
+  margin: 15vh auto;
+  display: flex;
+  box-shadow: 5px 6px 25px 7px rgba(0, 0, 0, 0.75);
+}
+
+.text,
+.img-wrapper {
+  flex-basis: 50%;
+  height: 65vh;
+}
+
+.img-wrapper  {
+  background: url(../Requirements-and-Resources/image/image.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.text {
+  background: url(../Requirements-and-Resources/image/image1.png);
+  background-size: contain;
+  padding: 0px 30px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 35px;
+  padding: 5px;
+  margin-bottom: 0px;
+  border-bottom: 2px dotted #4d851a;
+}
+
+.serves-total {
+  display: flex;
+  justify-content: space-between;
+}
+
+.serves-total p {
+  font-style: italic;
+  margin-top: 5px;
+}
+
+.products-and-recipe{
+  margin-top: 15px;
+}
+.products-and-recipe span {
+  color: #4d851a;
+}
+
+.products-and-recipe p {
+  margin: 5px;
+}
+.products-and-recipe .recipe {
+  margin-top: 50px;
+  padding-right: 50px;
+}
+
+table {
+  margin-top: 80px;
+  width: 100%;
+  text-align: center;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+table tr td {
+  padding: 0px 20px;
+}

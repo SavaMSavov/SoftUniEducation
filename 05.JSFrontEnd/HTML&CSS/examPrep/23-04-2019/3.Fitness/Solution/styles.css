@@ -1,0 +1,150 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css";
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&family=PT+Serif&display=swap");
+body {
+  margin: 0px;
+  font-family: "PT Sans", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #d01919;
+  padding: 20px;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+}
+
+header i {
+  padding: 0px 10px;
+}
+
+.banner {
+  height: 80vh;
+  background: url(../Requirements-and-Resources/image/fitness-main.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  margin: 0px;
+  padding-top: 20px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  margin: 0px 40px;
+}
+
+.banner-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15vh;
+}
+
+.banner-text-wrapper h1 {
+  font-size: 90px;
+  color: white;
+  margin-bottom: 0px;
+  letter-spacing: 10px;
+  font-family: "PT Serif", serif;
+}
+
+.banner-text-wrapper p {
+  font-size: 25px;
+  width: 35%;
+  text-align: center;
+  color: white;
+}
+
+.banner-text-wrapper a {
+  text-decoration: none;
+  background-color: #d01919;
+  color: white;
+  border-radius: 5px;
+  letter-spacing: 3px;
+  padding: 10px 15px;
+}
+
+.welcome,
+.coaches {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.coaches {
+  background-color: #efefef;
+}
+
+.welcome h1,
+.coaches h1 {
+  font-size: 40px;
+  letter-spacing: 3px;
+  padding-top: 50px;
+  margin: 0px;
+}
+
+.welcome h1::after,
+.coaches h1::after {
+  position: absolute;
+  content: "";
+  height: 4px;
+  margin: 70px auto;
+  left: 0;
+  right: 0;
+  width: 3%;
+  background: #d01919;
+}
+
+.positives,
+.coaches-wrapper {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.positives article,
+.coaches-wrapper article {
+  flex-basis: 15%;
+  text-align: center;
+}
+
+.positives h2,
+.coaches-wrapper h4 {
+  letter-spacing: 2px;
+  color: #d01919;
+}
+
+.positives img {
+  width: 30%;
+}
+
+.coaches-wrapper article h2 {
+  margin-bottom: 0px;
+  font-size: 22px;
+}
+
+.coaches-wrapper article h4 {
+  margin-top: 0px;
+}
+
+.coaches-wrapper article img {
+  border-radius: 10px;
+}
+footer {
+  background-color: #d01919;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+  padding: 10px;
+}
