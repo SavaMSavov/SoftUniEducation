@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css";
+body {
+  margin: 0px;
+  font-family: Helvetica, sans-serif;
+}
+h1,
+h3 {
+  font-family: "Montserrat", sans-serif;
+}
+h1 {
+  font-size: 35px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #41bead;
+  padding: 10px 90px;
+}
+
+.logo-wrapper img {
+  width: 40%;
+}
+
+.header-nav {
+  flex-basis: 40%;
+}
+.header-nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.header-nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.teachers-info {
+  background-color: #ffb402;
+  color: white;
+  text-align: center;
+  padding: 5vh 32vw;
+}
+
+.more-info-about-teachers {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+  color: #655d6e;
+}
+
+.teacher {
+  flex-basis: 40%;
+  display: flex;
+}
+
+.teacher-img-wrapper {
+  width: 30%;
+  text-align: center;
+}
+
+.teacher-img-wrapper img {
+  width: 60%;
+  border-radius: 50%;
+  border: 5px solid #41bead;
+}
+
+.teacher-text-wrapper {
+  width: 60%;
+}
+
+.teacher-text-wrapper h3,
+.another-teacher-text h3 {
+  color: #41bead;
+  margin-bottom: 10px;
+}
+
+.role,
+.another-teacher-text p {
+  color: #cdb9b2;
+  margin-top: 0px;
+}
+
+.more-teachers {
+  display: flex;
+  width: 80%;
+  margin: 15vh auto;
+  justify-content: space-around;
+}
+
+.another-teacher {
+  flex-basis: 20%;
+  text-align: center;
+}
+
+.another-teacher img {
+  width: 40%;
+  height: 120px;
+  border-radius: 50%;
+  border: 5px solid #41bead;
+}
+
+.become-а-part {
+  background-color: #66b9f8;
+  color: white;
+  height: 40vh;
+  border-top: 10px solid #92cdfb;
+  border-bottom: 10px solid #919191;
+}
+
+.become-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.become-text-wrapper h1 {
+  margin-bottom: 15px;
+}
+
+.become-text-wrapper p {
+  width: 45%;
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  width: 45%;
+  margin: 30px auto;
+  justify-content: space-around;
+}
+
+.input-wrapper input {
+  padding: 10px;
+  color: white;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+
+.input-wrapper a {
+  background-color: #ff9100;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+  padding: 10px 30px;
+  border-radius: 40px;
+  box-shadow: 4px 3px 11px 0px rgba(0, 0, 0, 0.75);
+}
+
+footer {
+  display: flex;
+  padding: 10px 90px;
+
+  background-color: #565656;
+  color: white;
+}
+
+footer article {
+  flex-basis: 25%;
+}
+footer article nav ul {
+  padding: 0;
+  margin: 0px;
+  list-style: none;
+}
+footer article nav ul li {
+  margin: 10px 0px;
+}
+footer article nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+footer article h3 {
+  color: white;
+}
+
+.social ul {
+  display: flex;
+  font-size: 30px;
+}
+
+.social ul i {
+  margin-right: 20px;
+}
