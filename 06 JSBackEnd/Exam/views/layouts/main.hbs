@@ -1,56 +1,79 @@
 <html lang="en">
 
   <head>
-    <meta charset="UTF-8" />
-    <title>BookingUni</title>
+    <!-- Do not forget to change the path to the css file -->
     <link rel="stylesheet" href="/static/css/style.css" />
+    <title>{{title}}</title>
   </head>
 
   <body>
 
-    <div id="container">
+    {{#if errors}}
 
-      {{#if errors}}
-
-        <div>
-
-          <div class="notification errorBox">
-            {{#each errors}}
-              <p>
-                <span>{{this}}</span></p>
-            {{/each}}
-          </div>
+      <div>
+        <div class="error">
+          {{#each errors}}
+            <p>
+              <span>{{this}}</span></p>
+          {{/each}}
         </div>
-      {{/if}}
+      </div>
+    {{/if}}
 
-      <nav>
-        {{#if user}}
-          <div class="left-container">
-            <ul>
-              <li><a href="/">Home</a></li>
-              <li><a href="/hotels/create">Add +</a></li>
-            </ul>
-          </div>
-          <div class="right-container">
-            <a href="/user" class="log-out">{{user.username}}</a>
-            <a href="/auth/logout" class="log-out">Logout</a>
-          </div>
-        {{else}}
-          <div class="left-container">
-            <ul>
-              <li><a href="/">Home</a></li>
-              <li><a href="/auth/login">Login</a></li>
-              <li><a href="/auth/register">Register</a></li>
-            </ul>
-          </div>
-        {{/if}}
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <!-- Do not forget to change the path to the images -->
+        <img class="logo" src="/static/images/before.png" alt="before-logo" />
+        <img
+          class="car logo"
+          src="/static/images/trip-logo.png"
+          alt="trip-logo"
+        />
+        <img class="logo" src="/static/images/after.png" alt="after-logo" />
+        <div class="collapse navbar-collapse" id="navbarResponsive">
 
-      </nav>
-      {{{body}}}
+          <ul class="navbar-nav ml-auto">
+            <!-- Guest users and Logged users -->
 
-      <footer>@SoftUni - JS Back-end - BookingUni 2020</footer>
-    </div>
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/trip/shared">Shared Trips</a>
+            </li>
+            <!-- Logged users -->
+            {{#if user}}
+              <li class="nav-item">
+                <a class="nav-link" href="/trip/create">Offer Trip</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/auth/profile">Profile</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/auth/logout">Logout as
+                  {{user.email}}</a>
+              </li>
+            {{else}}
+              <!-- Guest users -->
+              <li class="nav-item">
+                <a class="nav-link" href="/auth/login">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/auth/register">Register</a>
+              </li>
+            {{/if}}
+          </ul>
+        </div>
+      </div>
+    </nav>
 
+    {{{body}}}
+
+    <footer id="sticky-footer" class="bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Shared Trip 2021</p>
+      </div>
+    </footer>
   </body>
 
 </html>
