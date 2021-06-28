@@ -9,21 +9,12 @@ router.get("/register", isGuest(), (req, res) => {
 router.post(
   "/register",
   isGuest(),
-  body("usernameField")
-    .isLength({ min: 3 })
-    .withMessage("Username must be at least 3 charecters long.")
-    .bail()
-    .isAlphanumeric()
-    .withMessage("Username may contain only english letters and numbers."),
-
-  body("passwordField")
-    .isLength({ min: 3 })
-    .withMessage("Username must be at least 3 charecters long.")
-    .bail()
-    .isAlphanumeric()
-    .withMessage("Password may contain only english letters and numbers."),
+  body("email", "Invalid Email").isEmail(),
+  body("password")
+    .isLength({ min: 4 })
+    .withMessage("Password must be at least 4 charecters long."),
   body("rePass").custom((value, { req }) => {
-    if (value != req.body.passwordField) {
+    if (value != req.body.password) {
       throw new Error("Password dont match");
     }
     return true;
@@ -37,14 +28,14 @@ router.post(
         throw new Error(message);
       }
 
-      await req.auth.register(req.body.usernameField, req.body.passwordField);
+      await req.auth.register(req.body.email, req.body.password);
       res.redirect("/");
     } catch (err) {
       console.log(err.message);
       const ctx = {
         errors: err.message.split("\n"),
         userData: {
-          username: req.body.usernameField,
+          email: req.body.email,
         },
       };
       res.render("user/register", ctx);
@@ -53,23 +44,23 @@ router.post(
 );
 
 router.get("/login", isGuest(), (req, res) => {
-  res.render("user/login");
+  res.render("user/login", { title: "Login" });
 });
 
 router.post("/login", isGuest(), async (req, res) => {
   try {
-    await req.auth.login(req.body.usernameField, req.body.passwordField);
+    await req.auth.login(req.body.email, req.body.password);
     res.redirect("/");
   } catch (err) {
     console.log(err.message);
     let errors = [err.message];
     if (err.type == "credential") {
-      errors = ["Incorect username or password"];
+      errors = ["Incorect email or password"];
     }
     const ctx = {
       errors,
       userData: {
-        username: req.body.usernameField,
+        email: req.body.email,
       },
     };
     res.render("user/login", ctx);
@@ -79,5 +70,9 @@ router.post("/login", isGuest(), async (req, res) => {
 router.get("/logout", (req, res) => {
   req.auth.logout();
   res.redirect("/");
+});
+
+router.get("/profile", (req, res) => {
+  res.render("user/profile", { title: "Profile" });
 });
 module.exports = router;
