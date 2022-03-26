@@ -72,7 +72,7 @@ router.get("/logout", (req, res) => {
   res.redirect("/");
 });
 
-router.get("/profile", (req, res) => {
+router.get("/profile", isUser(), (req, res) => {
   res.render("user/profile", { title: "Profile" });
 });
 module.exports = router;

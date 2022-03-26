@@ -3,7 +3,7 @@ const { parseError } = require("../util/parser");
 const { isUser } = require("../middlewares/guards");
 
 router.get("/create", isUser(), (req, res) => {
-  res.render("trip/create");
+  res.render("trip/create", { title: "Create Trip" });
 });
 router.post("/create", isUser(), async (req, res) => {
   try {
@@ -51,7 +51,7 @@ router.post("/create", isUser(), async (req, res) => {
 
 router.get("/shared", async (req, res) => {
   const trips = await req.storage.getAllTrips();
-  res.render("trip/shared", { trips });
+  res.render("trip/shared", { trips, title: "Shared Trips" });
 });
 
 router.get("/details/:id", async (req, res) => {
@@ -60,13 +60,13 @@ router.get("/details/:id", async (req, res) => {
     trip.hasUser = Boolean(req.user);
     trip.isAuthor = req.user && req.user._id == trip.author;
     trip.isJoined = req.user && trip.buddies.find((x) => x._id == req.user._id);
-    trip.members = trip.buddies;
+    trip.members = trip.buddies.join(", ");
 
     if (trip.seats < 1) {
       trip.isFull = true;
     }
 
-    res.render("trip/details", { trip });
+    res.render("trip/details", { trip, title: "Details" });
   } catch (err) {
     console.log(err.message);
     console.log(err);
@@ -143,8 +143,9 @@ router.get("/join/:id", isUser(), async (req, res) => {
     const trip = await req.storage.getTripById(req.params.id);
 
     if (trip.author == req.user._id) {
-      throw new Error("Cannot like trip you have created.");
+      throw new Error("Cannot join trip you have created.");
     }
+
     await req.storage.joinTrip(req.params.id, req.user._id);
     res.redirect("/trip/details/" + req.params.id);
   } catch (err) {
